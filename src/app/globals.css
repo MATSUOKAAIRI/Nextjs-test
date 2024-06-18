@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ /*ヘッダー*/
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e6e6e6;
+}
+header {
+  width: 93%;
+  padding: 30px 4% 10px;
+  position: fixed;
+ top: 0;
+ display: flex;
+ align-items: center;
+}
+h1 {
+  margin: 0; padding: 0;
+  font-size: 30px;
+}
+a {	
+  text-decoration: none;
+  color: #4b4b4b;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+li {
+  margin: 0 0 0 15px;
+  font-size: 20px;
+}
+nav {
+  margin: 0 0 0 auto;
+}
+
+.gnavi{
+display: flex;
+flex-wrap: wrap;
+margin:0 0 50px 0;
+list-style: none;
+}
+
+.gnavi li a{
+display: block;
+padding:10px 30px;
+text-decoration: none;
+color: #333;
+}
+
+.gnavi li{
+margin-bottom:20px;
+}
+
+.gnavi li a{
+position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover{
+color:#ffffff;
+}
+
+.gnavi li a::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 10%;
+width: 80%;
+height: 2px;
+background:#0481A2;
+transition: all .3s;
+transform: scale(0, 1);
+transform-origin: center top;
+}
+
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+transform: scale(1, 1);
+}
+/*本文*/
+h3 { 
+  text-align: center;
+  font-size: 50px;
+  }
+h4{font-size: 20px;}
+p{font-size: 30px;}
+/*枠*/
+.tape-box{
+  margin: 1em 0;
+  padding: 1em;
+  margin-right: 300px;
+  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-left: 300px;
+  background-image:"/istockphoto-1230895249-612x612.jpg";
+  background-size: 660px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.tape{
+  display: block;
+  background-color: rgb(252, 252, 231);
+  opacity: 0.2;
+  transform: rotate(3deg);
+  width: 10%;
+  height: 35px;
+  margin: -2em auto 0 auto;
+  border-left: 13px dotted rgba(0,0,0,.1);
+  border-right: 13x dotted rgba(0,0,0,.1);
+} 
+/*背景*/
+body {
+  background-image:"/pr00485-640x426.jpg"; /* 画像 */
+  background-size: cover;               /* 全画面 */
+  background-attachment: fixed;         /* 固定 */
+  background-position: center center;   /* 縦横中央 */
+}
+/*枠2*/
+.tape-box2{
+  margin: 1em 0;
+  padding: 1em;
+  margin-right: 300px;
+  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-left: 300px;
+  background-image:("/istockphoto-1230895249-612x612.jpg");
+  background-size: 660px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.tape2{
+  display: block;
+  background-color: rgb(252, 252, 210);
+  opacity: 0.2;
+  transform: rotate(3deg);
+  width: 10%;
+  height: 35px;
+  margin: -2em auto 0 auto;
+  border-left: 13px dotted rgba(0,0,0,.1);
+  border-right: 13x dotted rgba(0,0,0,.1);
+} 
+.float{
+  float: left;
+  margin-left: 100px;
+}
